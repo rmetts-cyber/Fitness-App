@@ -8,7 +8,7 @@ layout="centered"
 )
 
 # 2. Sidebar UI
-with   st.sidebar:
+with st.sidebar:
 st.header("⚙️ App Settings")
 st.write("Welcome to FitFocus! Select a focus area to generate a custom routine.")
 st.info("💡 **Tip:** Click on any recommended exercise card to see the full details.")
@@ -33,7 +33,7 @@ exercise_db = {
 ],
 "Knee Discomfort": [
 {"name": "Wall Sits", "details": "3 rounds of 30 seconds. Keeps the joint static while building quad strength directly around the kneecap."},
-{"name": "Straight Leg Raises", "-%": "3 sets of 10 reps. Lie flat and raise one leg at a time. Activates hip flexors and quads without knee strain."},
+{"name": "Straight Leg Raises", "details": "3 sets of 10 reps. Lie flat and raise one leg at a time. Activates hip flexors and quads without knee strain."},
 {"name": "Hamstring Curls", "details": "3 sets of 12 reps. Crucial for balancing out the strength ratios around the knee joint."}
 ]
 }
@@ -49,12 +49,11 @@ options=["-- Select an Option --"] + focus_areas
 
 st.write("") # Just adds a bit of whitespace padding
 
-# 6. Logic to Display UI Elements Dynamic based on Selection
+# 6. Logic to Display UI Elements Dynamically based on Selection
 if selected_area and selected_area != "-- Select an Option --":
 
 # Visual success banner
 st.success(f"🎯 Displaying targeted exercises for: **{selected_area}**")
-
 st.write("### Recommended Routines")
 
 # Loop through the list and create clean, clickable drop-down elements for each exercise
