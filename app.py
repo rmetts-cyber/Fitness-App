@@ -57,11 +57,11 @@ if selected_area and selected_area != "-- Select an Option --":
   st.write("### Recommended Routines")
 
 # LOOP IS INSIDE THE IF (Indented 4 spaces)
-        for item in exercise_db[selected_area]:
+  for item in exercise_db[selected_area]:
 # EXPANDER IS INSIDE THE LOOP (Indented 8 spaces)
-              with st.expander(f"🏋️‍♂️ {item['name']}"):
+    with st.expander(f"🏋️‍♂️ {item['name']}"):
 # WRITE IS INSIDE THE EXPANDER (Indented 12 spaces)
-                          st.write(item['details'])
+      st.write(item['details'])
 
 else:
 # Friendly reminder UI state when nothing is selected yet
