@@ -9,7 +9,7 @@ layout="centered"
 
 # 2. Sidebar UI
 with st.sidebar:  
-st.header("⚙️ App Settings")
+  st.header("⚙️ App Settings")
 st.write("Welcome to FitFocus! Select a focus area to generate a custom routine.")
 st.info("💡 **Tip:** Click on any recommended exercise card to see the full details.")
 
