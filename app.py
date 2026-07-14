@@ -65,4 +65,4 @@ for item in exercise_db[selected_area]:
 
 else:
 # Friendly reminder UI state when nothing is selected yet
-st.info("👋 Please select a symptom from the dropdown menu above to view exercises.")
+  st.info("👋 Please select a symptom from the dropdown menu above to view exercises.")
