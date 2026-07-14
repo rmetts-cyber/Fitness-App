@@ -58,9 +58,9 @@ st.write("### Recommended Routines")
 
 # Loop through the list and create clean, clickable drop-down elements for each exercise
 for item in exercise_db[selected_area]:
-with st.expander(f"🏋️‍♂️ {item['name']}"):
-st.write(item['details'])
+  with st.expander(f"🏋️‍♂️ {item['name']}"):
+  st.write(item['details'])
 
 else:
 # Friendly reminder UI state when nothing is selected yet
-st.info("👋 Please select a symptom from the dropdown menu above to view exercises.")
+  st.info("👋 Please select a symptom from the dropdown menu above to view exercises.")
