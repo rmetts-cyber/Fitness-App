@@ -51,7 +51,7 @@ st.write("") # Just adds a bit of whitespace padding
 
 # 6. Logic to Display UI Elements Dynamically based on Selection
 if selected_area and selected_area != "-- Select an Option --":
-
+  
 # Visual success banner
 st.success(f"🎯 Displaying targeted exercises for:   **{selected_area}**")
   st.write("### Recommended Routines")
