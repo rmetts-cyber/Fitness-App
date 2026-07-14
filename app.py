@@ -55,7 +55,7 @@ if selected_area and selected_area != "-- Select an Option --":
 # Visual success banner
   st.success(f"🎯 Displaying targeted exercises for:   **{selected_area}**")
     st.write("### Recommended Routines")
-  
+
 # LOOP IS INSIDE THE IF (Indented 4 spaces)
 for item in exercise_db[selected_area]:
 # EXPANDER IS INSIDE THE LOOP (Indented 8 spaces)
